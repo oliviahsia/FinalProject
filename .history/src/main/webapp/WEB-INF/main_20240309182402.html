@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- External CSS File -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="fixed-left">
+    <!-- Content in left column -->
+    <img src="https://lh3.googleusercontent.com/a/ACg8ocKWVQM9hWLLmIxDOQ-8DDjxv5seJuP0P7FXzxbhLupS1Ffm=s576-c-no"
+      alt="Olivia Hsia" class="profile-pic">
+    <h2>Olivia Hsia</h2>
+    <p>Hi, my name is Olivia. A software design major aiming to become a data analyst. </p>
+  </div>
+
+  <div class="scrollable-right">
+    <!-- Content in right column -->
+    <h2>About Me</h2>
+    <p>Click below button to know about me</p>
+
+    <div class="scrollable-right">
+      
+      <!-- Navigation buttons replaced with Bootstrap nav-pills -->
+      
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" onclick="showSection('Skills',this)">Skills</a>
+        
+        </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="showSection('Certificate',this)">Certificate</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="showSection('Project',this)">Project</a>
+  </li>
+</ul>
+
+<!-- Content sections (update as needed with card-like design) -->
+<div id="Skills" class="content-section">
+  <!-- Add card-like elements here -->
+</div>
+<div id="Certificate" class="content-section" style="display: none;">
+  <!-- Add card-like elements here -->
+</div>
+<div id="Project" class="content-section" style="display: none;">
+  <!-- Add card-like elements here -->
+</div>
+
+     
+
+    </div>
+
+    <!-- Add more content as needed to enable scrolling -->
+  </div>
+
+  <!-- Bootstrap JS and dependencies (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

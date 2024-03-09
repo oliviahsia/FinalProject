@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Scrollable Layout</title>
+  <!-- 引入Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* 设置左侧区块的固定高度和滚动效果 */
+    .fixed-height {
+      height: 100vh;
+      overflow-y: scroll;
+    }
+
+    /* 额外样式可以在这里添加 */
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- 左边区块，固定宽度 -->
+      <div class="col-md-4">
+        <!-- 在这里添加内容 -->
+        <p>左侧内容...</p>
+      </div>
+      <!-- 右边区块，可以滚动 -->
+      <div class="col-md-8 fixed-height">
+        <!-- 在这里添加内容 -->
+        <p>右侧滚动内容...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 引入Bootstrap JS和依赖 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

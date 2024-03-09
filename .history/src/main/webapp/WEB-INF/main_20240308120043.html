@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    
+    /* Custom styles */
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      /* Remove default margin */
+    }
+
+    .fixed-left {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      /* Set the width of the left column */
+      height: 100%;
+      background-color: #FFFACD;
+      /* Goose yellow for the left column */
+      border-right: 1px solid #dee2e6;
+      /* Optional border */
+      overflow-x: hidden;
+      /* Prevent horizontal scrollbar */
+      padding: 20px;
+      /* Optional padding */
+    }
+
+    .scrollable-right {
+      margin-left: 250px;
+      /* Same as the width of the left column */
+      padding: 20px;
+      height: 100%;
+      overflow-y: auto;
+      /* Enable vertical scrollbar if content overflows */
+      background-color: #FFFFFF;
+      /* White for the right column */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed-left">
+    <!-- Content in left column -->
+    <h2>Left Column</h2>
+    <p>This content will remain fixed on the left side.</p>
+  </div>
+  <div class="scrollable-right">
+    <!-- Content in right column -->
+    <h2>Right Column (Scrollable)</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <!-- Add more content as needed to enable scrolling -->
+  </div>
+
+
+  <!-- Bootstrap JS and dependencies (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
